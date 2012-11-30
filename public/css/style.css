@@ -1,0 +1,42 @@
+body {
+  font-family: 'Georgia', 'Trocchi', 'Helvetica', 'serif';
+  font-size: 1.2em;
+  -webkit-text-size-adjust: none;
+  background: url(/images/bg.png);
+  line-height: 130%;
+  padding-top: 1%;
+}
+
+h1 {
+  font-size: 1.5em;
+  text-shadow: 2px 1px 1px #CCC;
+}
+
+#main {
+  margin: 0 auto 0 auto;
+  max-width: 30em;
+}
+
+a {
+  color: #0bf;
+}
+
+a:hover {
+  color: #0078af;
+}
+
+ul.posts {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul.posts span {
+  padding-left: 20px;
+}
+
+time { color: #777; }
+
+code {
+  background: #EEE9C7;
+  border: 1px solid #CECE83;
+}
