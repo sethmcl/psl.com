@@ -668,7 +668,7 @@ header {
   -webkit-font-smoothing: antialiased;
   min-height: 76px;
 }
-header h1 {
+header h1 a {
   font: 40px/48px "Copse", "Helvetica Neue", Helvetica, Arial, sans-serif;
   color: #f3f3f3;
   text-shadow: 0px 2px 0px #235796;
@@ -679,6 +679,18 @@ header h1 {
   -o-text-overflow: ellipsis;
   -ms-text-overflow: ellipsis;
 }
+
+header h1 a:hover {
+  opacity: .8;
+}
+
+header h1 img {
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  margin-left: -162px;
+}
+
 header p {
   color: #d8d8d8;
   text-shadow: rgba(0, 0, 0, 0.2) 0 1px 0;
@@ -788,7 +800,6 @@ header p {
   right: 7px;
   top: 7px;
   display: block;
-  background: url(../images/octocat-logo.png);
 }
 
 section {
@@ -949,6 +960,10 @@ footer {
   header ul, header p.view {
     position: static;
   }
+
+  header h1 img {
+    display: none;
+  }
 }
 @media print, screen and (max-width: 480px) {
   header {
@@ -964,6 +979,7 @@ footer {
     -o-text-overflow: ellipsis;
     -ms-text-overflow: ellipsis;
   }
+
 
   section {
     margin-top: 5px;

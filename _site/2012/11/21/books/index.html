@@ -3,11 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>{{ page.title }}</title>
-    <link rel="stylesheet" href="{{ page.root_path }}public/css/styles.css">
-    <link rel="stylesheet" href="{{ page.root_path }}public/css/pygment_trac.css">
+    <title>Books</title>
+    <link rel="stylesheet" href="../../../../../public/css/styles.css">
+    <link rel="stylesheet" href="../../../../../public/css/pygment_trac.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-    <script src="{{ page.root_path }}public/js/main.js"></script>
+    <script src="../../../../../public/js/main.js"></script>
     <!--[if lt IE 9]>
       <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -18,20 +18,26 @@
 
       <header>
         <h1>
-          <img src="{{ page.root_path }}public/img/profile.jpg" alt="Patricia Patton, PhD">
-          <a href="{{ page.root_path }}index.html">Patricia Patton, PhD</a>
+          <img src="../../../../../public/img/profile.jpg" alt="Patricia Patton, PhD">
+          <a href="../../../../../index.html">Patricia Patton, PhD</a>
         </h1>
         <p>Human Capital Strategist</p>
       </header>
 
       <div id="banner">
         <span id="logo"></span>
-        <a href="{{ page.root_path }}about" class="button fork"><strong>Contact Patricia</strong></a>
+        <a href="../../../../../about" class="button fork"><strong>Contact Patricia</strong></a>
         <div class="downloads">
           <ul>
-            {% for post in site.posts %}
-            <li><a href="{{ post.url }}" class="button">{{ post.title }}</a></span></li>
-            {% endfor %}
+            
+            <li><a href="/2012/11/23/services/" class="button">Services</a></span></li>
+            
+            <li><a href="/2012/11/22/biography/" class="button">Biography</a></span></li>
+            
+            <li><a href="/2012/11/21/books/" class="button">Books</a></span></li>
+            
+            <li><a href="/2012/11/20/pep_talks/" class="button">PEP Talks</a></span></li>
+            
           </ul>
         </div>
       </div><!-- end banner -->
@@ -42,9 +48,11 @@
         </ul>
       </nav>
       <section>
-        <h3>{{ page.title }}</h3>
+        <h3>Books</h3>
 
-        {{ content }}
+        <p>my books.</p>
+
+
 
       </section>
       <footer>
